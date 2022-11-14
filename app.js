@@ -30,6 +30,14 @@ app.get('/contact',(req, res) => {
   res.render('contact',{contactContent: contactContent})
 })
 
+app.get('/compose',(req, res) => {
+  res.render('compose')
+})
+
+app.post('/contact',(req, res) => {
+  console.log("Submit")
+})
+
 
 
 
