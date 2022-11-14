@@ -53,9 +53,7 @@ app.get('/posts/:postName', (req,res) =>{
     if(requestedTitle===currentTitle){
       res.render('post',{postContent: post})
     }
-    else{
-      console.log("Not a Match")
-    }
+    
   })
 
 })
