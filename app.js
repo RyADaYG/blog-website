@@ -45,6 +45,9 @@ app.post('/compose',(req, res) => {
   res.redirect('/')
 })
 
+app.get('/posts/:postName', (req,res) =>{
+  console.log(req.params.postName)
+})
 
 
 
