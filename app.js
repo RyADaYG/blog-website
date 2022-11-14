@@ -51,7 +51,7 @@ app.get('/posts/:postName', (req,res) =>{
   blogPosts.forEach(function(post){
     currentTitle=_.lowerCase(post.title)
     if(requestedTitle===currentTitle){
-      console.log("Match Found")
+      res.render('post',{postContent: post})
     }
     else{
       console.log("Not a Match")
