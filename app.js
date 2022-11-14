@@ -34,8 +34,8 @@ app.get('/compose',(req, res) => {
   res.render('compose')
 })
 
-app.post('/contact',(req, res) => {
-  console.log("Submit")
+app.post('/compose',(req, res) => {
+  console.log(req.body.composeBar)
 })
 
 
